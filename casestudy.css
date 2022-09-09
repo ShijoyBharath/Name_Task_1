@@ -1,0 +1,91 @@
+img {
+    max-height:420px;
+    max-width:620px;
+}
+
+.card {
+    display: flex;
+    scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
+    max-height:420px;
+    
+}
+
+.card div{
+    padding: 50px 40px;
+    width: 440px;
+}
+
+.card:hover .link-blue{
+    opacity: 1;
+}
+
+.client-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(251, 248, 248);
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+}
+
+.card-list {
+    background-color: white;
+    width: 100%;
+    max-width: 1120px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y:hidden;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+
+.links {
+    display: flex;
+    padding: 2px;
+    gap:2px;
+    width: 100%;
+    max-width: 1120px;
+}
+
+.links div{
+    background-color: white;
+    padding: 30px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.links img{
+    height: 70px;
+    width: 100%;
+    opacity: 70%;
+}
+
+.links img:hover{
+   opacity: 100%;
+}
+
+.links div:hover{
+
+   border-bottom: 3px solid blue;
+}
+
+
+
+.link-blue {
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+#link-blue-heading{
+    text-decoration: none;
+    padding-bottom:50px;
+}
